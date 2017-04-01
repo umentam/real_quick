@@ -17,6 +17,9 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     
+    @IBOutlet weak var customerSwitch: UISwitch!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -33,13 +36,14 @@ class SignUpViewController: UIViewController {
         var nameString = name.text
         var emailString = email.text
         var passwordString = password.text
+        var customer = customerSwitch.isOn
         
         FIRAuth.auth()?.createUser(withEmail: emailString!, password: passwordString!) { (user, error) in
             if error != nil {
                 print(error)
                 return
             }else{
-                self.ref.child("users").child(user!.uid).setValue(["username": nameString!, "email-address": emailString!])
+                self.ref.child("users").child(user!.uid).setValue(["username": nameString!, "email-address": emailString!, "isCustomer": customer])
                 return
             }
         }

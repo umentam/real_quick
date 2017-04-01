@@ -98,6 +98,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UDt-68-Zlp">
+                                <frame key="frameInset" minX="207" minY="421" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Customer?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loS-sO-i2B">
+                                <frame key="frameInset" minX="118" minY="426" width="94" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0078431372550000003" green="0.81568627449999997" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qd-y9-qua">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="AIj-sk-yYc"/>
@@ -122,10 +133,11 @@
                             <constraint firstItem="4qd-y9-qua" firstAttribute="centerX" secondItem="Ptk-ha-K9Y" secondAttribute="centerX" id="eME-fr-Uxl"/>
                             <constraint firstItem="VNK-b5-YwT" firstAttribute="top" secondItem="yRZ-ei-Lib" secondAttribute="bottom" constant="37" id="erZ-dg-Elg"/>
                             <constraint firstItem="5wP-33-nMX" firstAttribute="centerX" secondItem="Ptk-ha-K9Y" secondAttribute="centerX" id="sXB-Yp-gHS"/>
-                            <constraint firstItem="4qd-y9-qua" firstAttribute="top" secondItem="yRZ-ei-Lib" secondAttribute="bottom" constant="403" id="vTU-9J-2uI"/>
+                            <constraint firstItem="4qd-y9-qua" firstAttribute="top" secondItem="yRZ-ei-Lib" secondAttribute="bottom" constant="448" id="vTU-9J-2uI"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="customerSwitch" destination="UDt-68-Zlp" id="jVx-Ky-o1B"/>
                         <outlet property="email" destination="vEh-0a-zIn" id="2Y8-Zc-RX8"/>
                         <outlet property="name" destination="ofh-eW-z03" id="IjQ-ny-MUs"/>
                         <outlet property="password" destination="5wP-33-nMX" id="5Xu-7W-jXH"/>
