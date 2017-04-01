@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Unknown constraint types" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -126,10 +127,10 @@
                                     <action selector="signUp:" destination="2Gp-dL-guD" eventType="touchUpInside" id="7FA-iB-EGz"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="17692255_10206315147957997_1713214941_o" translatesAutoresizingMaskIntoConstraints="NO" id="xgM-S4-Swb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo Icon 4" translatesAutoresizingMaskIntoConstraints="NO" id="xgM-S4-Swb">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="117" id="Xuv-y8-Gez"/>
-                                    <constraint firstAttribute="height" constant="105" id="bXW-7z-EVJ"/>
+                                    <constraint firstAttribute="width" constant="186" id="Xuv-y8-Gez"/>
+                                    <constraint firstAttribute="height" constant="142" id="bXW-7z-EVJ"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -144,7 +145,7 @@
                             <constraint firstItem="ofh-eW-z03" firstAttribute="top" secondItem="yRZ-ei-Lib" secondAttribute="bottom" constant="246" id="MS4-Tn-dtG"/>
                             <constraint firstItem="vEh-0a-zIn" firstAttribute="centerX" secondItem="Ptk-ha-K9Y" secondAttribute="centerX" id="Sp1-L7-TuZ"/>
                             <constraint firstItem="VNK-b5-YwT" firstAttribute="centerX" secondItem="Ptk-ha-K9Y" secondAttribute="centerX" id="USk-V6-ySa"/>
-                            <constraint firstItem="xgM-S4-Swb" firstAttribute="top" secondItem="yRZ-ei-Lib" secondAttribute="bottom" constant="111" id="cpV-Mc-Kgh"/>
+                            <constraint firstItem="xgM-S4-Swb" firstAttribute="top" secondItem="yRZ-ei-Lib" secondAttribute="bottom" constant="96" id="cpV-Mc-Kgh"/>
                             <constraint firstItem="4qd-y9-qua" firstAttribute="centerX" secondItem="Ptk-ha-K9Y" secondAttribute="centerX" id="eME-fr-Uxl"/>
                             <constraint firstItem="VNK-b5-YwT" firstAttribute="top" secondItem="yRZ-ei-Lib" secondAttribute="bottom" constant="37" id="erZ-dg-Elg"/>
                             <constraint firstItem="5wP-33-nMX" firstAttribute="centerX" secondItem="Ptk-ha-K9Y" secondAttribute="centerX" id="sXB-Yp-gHS"/>
@@ -614,8 +615,66 @@
                                     <segue destination="h0R-0v-oHS" kind="show" id="kAU-sb-IWo"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whole Foods, Overland Park" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1D7-jY-ArJ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="BTr-h9-xB6"/>
+                                    <constraint firstAttribute="width" constant="268" id="IEU-CX-hah"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apples: $0.50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jE4-da-P2m">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="2Xe-aC-KNk"/>
+                                    <constraint firstAttribute="height" constant="35" id="d15-Ok-VT3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pineapple: $1.50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcq-lG-YzZ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="ASz-3I-CBC"/>
+                                    <constraint firstAttribute="height" constant="35" id="xRv-ih-xkT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Potatoes: $0.60" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCw-7j-ZBV">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="0Y5-nA-zXr"/>
+                                    <constraint firstAttribute="width" constant="141" id="f7H-Km-l1Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bananas:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDS-5J-VL4">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="NW1-9D-eUN"/>
+                                    <constraint firstAttribute="height" constant="35" id="vvP-Gr-R2v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jE4-da-P2m" firstAttribute="top" secondItem="Kbs-nv-vGl" secondAttribute="bottom" constant="89" id="4Nk-Bn-seE"/>
+                            <constraint firstItem="wcq-lG-YzZ" firstAttribute="top" secondItem="Kbs-nv-vGl" secondAttribute="bottom" constant="132" id="8vI-mP-wr0"/>
+                            <constraint firstItem="uCw-7j-ZBV" firstAttribute="leading" secondItem="wvT-Dq-y44" secondAttribute="leadingMargin" constant="101" id="Dip-Ch-pFm"/>
+                            <constraint firstItem="1D7-jY-ArJ" firstAttribute="centerX" secondItem="wvT-Dq-y44" secondAttribute="centerX" id="Hh3-M1-ujt"/>
+                            <constraint firstItem="1D7-jY-ArJ" firstAttribute="top" secondItem="Kbs-nv-vGl" secondAttribute="bottom" constant="40" id="JiQ-d5-eoF"/>
+                            <constraint firstItem="jE4-da-P2m" firstAttribute="centerX" secondItem="wvT-Dq-y44" secondAttribute="centerX" id="Jie-hh-PNG"/>
+                            <constraint firstItem="wcq-lG-YzZ" firstAttribute="centerX" secondItem="wvT-Dq-y44" secondAttribute="centerX" id="R6H-gO-UDW"/>
+                            <constraint firstItem="pDS-5J-VL4" firstAttribute="top" secondItem="Kbs-nv-vGl" secondAttribute="bottom" constant="218" id="Teh-2O-hrY"/>
+                            <constraint firstItem="pDS-5J-VL4" firstAttribute="leading" secondItem="wvT-Dq-y44" secondAttribute="leadingMargin" constant="101" id="YXZ-Fb-mV6"/>
+                            <constraint firstItem="uCw-7j-ZBV" firstAttribute="top" secondItem="Kbs-nv-vGl" secondAttribute="bottom" constant="175" id="j1r-iY-Ezh"/>
+                            <constraint firstItem="1D7-jY-ArJ" firstAttribute="leading" secondItem="wvT-Dq-y44" secondAttribute="leadingMargin" constant="37" id="oD3-TV-TxQ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nYL-TU-fEm"/>
                     <connections>
@@ -629,6 +688,7 @@
     </scenes>
     <resources>
         <image name="17692255_10206315147957997_1713214941_o" width="1536" height="1536"/>
+        <image name="Logo Icon 4" width="500" height="363"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="9dz-qt-sQy"/>
