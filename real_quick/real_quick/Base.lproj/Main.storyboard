@@ -132,6 +132,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Wow-ox-qoz" firstAttribute="top" secondItem="yRZ-ei-Lib" secondAttribute="bottom" constant="381" id="0aa-Xa-ktc"/>
                             <constraint firstItem="vEh-0a-zIn" firstAttribute="top" secondItem="yRZ-ei-Lib" secondAttribute="bottom" constant="298" id="A6R-Tl-nhP"/>
                             <constraint firstItem="5wP-33-nMX" firstAttribute="top" secondItem="yRZ-ei-Lib" secondAttribute="bottom" constant="353" id="HcD-iD-NSE"/>
                             <constraint firstItem="ofh-eW-z03" firstAttribute="centerX" secondItem="Ptk-ha-K9Y" secondAttribute="centerX" id="KbM-Eh-34W"/>
@@ -144,6 +145,7 @@
                             <constraint firstItem="VNK-b5-YwT" firstAttribute="top" secondItem="yRZ-ei-Lib" secondAttribute="bottom" constant="37" id="erZ-dg-Elg"/>
                             <constraint firstItem="5wP-33-nMX" firstAttribute="centerX" secondItem="Ptk-ha-K9Y" secondAttribute="centerX" id="sXB-Yp-gHS"/>
                             <constraint firstItem="4qd-y9-qua" firstAttribute="top" secondItem="yRZ-ei-Lib" secondAttribute="bottom" constant="448" id="vTU-9J-2uI"/>
+                            <constraint firstItem="Wow-ox-qoz" firstAttribute="centerX" secondItem="Ptk-ha-K9Y" secondAttribute="centerX" id="xCZ-tl-x7M"/>
                         </constraints>
                     </view>
                     <connections>
