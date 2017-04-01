@@ -44,7 +44,13 @@ class SignUpViewController: UIViewController {
                 return
             }else{
                 self.ref.child("users").child(user!.uid).setValue(["username": nameString!, "email-address": emailString!, "isCustomer": customer])
-                return
+                if(!customer){
+                    print("making the segue")
+                    self.performSegue(withIdentifier: "distributorSegue", sender: self)
+                }else {
+                    self.performSegue(withIdentifier: "customerSegue", sender: self)
+                }
+                //return
             }
         }
         
