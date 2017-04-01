@@ -45,6 +45,16 @@ class UserViewController: UIViewController {
     }
     
     
+    @IBAction func signOut(_ sender: AnyObject) {
+        let firebaseAuth = FIRAuth.auth()
+        do {
+            try firebaseAuth?.signOut()
+            performSegue(withIdentifier: "userSignOut", sender: self)
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+        
+    }
     
     @IBAction func bananaDidClick(_ sender: Any) {
         

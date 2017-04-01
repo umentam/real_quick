@@ -19,12 +19,25 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var customerSwitch: UISwitch!
     
+    @IBOutlet weak var customerLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         ref = FIRDatabase.database().reference()
+        
+        //customerSwitch.addTarget(self, action: "switchChanged:", for: UIControlEvents.valueChanged)
     }
+    
+//    func switchChanged(mySwitch: UISwitch) {
+//        //let value = mySwitch.on
+//        // Do something
+//        if (customerSwitch.isOn){
+//            customerLabel.text = "Customer?"
+//        } else {
+//            customerLabel.text = "Distributor?"
+//        }
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

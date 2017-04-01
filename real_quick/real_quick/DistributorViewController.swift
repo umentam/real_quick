@@ -32,6 +32,15 @@ class DistributorViewController: UIViewController, UIPickerViewDelegate, UIPicke
     
     var available = false;
     
+    @IBAction func signOut(_ sender: AnyObject) {
+        let firebaseAuth = FIRAuth.auth()
+        do {
+            try firebaseAuth?.signOut()
+            performSegue(withIdentifier: "disSignOut", sender: self)
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
