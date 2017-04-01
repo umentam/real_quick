@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		34F509385C4AA8813443A9C8 /* Pods_real_quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624B490355E5C39E99D76B5E /* Pods_real_quick.framework */; };
+		4609FAB51E8FA413003ED65F /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4609FAB41E8FA413003ED65F /* UserViewController.swift */; };
+		4609FAB81E8FA8A4003ED65F /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4609FAB71E8FA8A3003ED65F /* StoreViewController.swift */; };
 		DD17950C1E8F73830028EFE4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD17950B1E8F73830028EFE4 /* GoogleService-Info.plist */; };
 		DD17950E1E8F738C0028EFE4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = DD17950D1E8F738C0028EFE4 /* Podfile */; };
 		DD5CD4CF1E8F8A7C002833A3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5CD4CE1E8F8A7C002833A3 /* SignUpViewController.swift */; };
@@ -30,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4609FAB41E8FA413003ED65F /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		4609FAB71E8FA8A3003ED65F /* StoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		4FE9E9BD097224CD839265F2 /* Pods-real_quick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-real_quick.debug.xcconfig"; path = "Pods/Target Support Files/Pods-real_quick/Pods-real_quick.debug.xcconfig"; sourceTree = "<group>"; };
 		624B490355E5C39E99D76B5E /* Pods_real_quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_real_quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D33D28F1F0EBC099A9F9AA /* Pods-real_quick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-real_quick.release.xcconfig"; path = "Pods/Target Support Files/Pods-real_quick/Pods-real_quick.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 			children = (
 				DD17950B1E8F73830028EFE4 /* GoogleService-Info.plist */,
 				DDFFC4021E8F5CB3003AFCA5 /* AppDelegate.swift */,
+				4609FAB41E8FA413003ED65F /* UserViewController.swift */,
+				4609FAB71E8FA8A3003ED65F /* StoreViewController.swift */,
 				DDFFC4041E8F5CB3003AFCA5 /* ViewController.swift */,
 				DDFFC4061E8F5CB3003AFCA5 /* Main.storyboard */,
 				DDFFC4091E8F5CB3003AFCA5 /* Assets.xcassets */,
@@ -182,6 +188,7 @@
 				TargetAttributes = {
 					DDFFC3FE1E8F5CB3003AFCA5 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4JA36LAH35;
 						ProvisioningStyle = Automatic;
 					};
 					DDFFC4121E8F5CB3003AFCA5 = {
@@ -285,6 +292,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4609FAB81E8FA8A4003ED65F /* StoreViewController.swift in Sources */,
+				4609FAB51E8FA413003ED65F /* UserViewController.swift in Sources */,
 				DD5CD4CF1E8F8A7C002833A3 /* SignUpViewController.swift in Sources */,
 				DDFFC4051E8F5CB3003AFCA5 /* ViewController.swift in Sources */,
 				DDFFC4031E8F5CB3003AFCA5 /* AppDelegate.swift in Sources */,
@@ -425,6 +434,7 @@
 			baseConfigurationReference = 4FE9E9BD097224CD839265F2 /* Pods-real_quick.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4JA36LAH35;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -443,6 +453,7 @@
 			baseConfigurationReference = B2D33D28F1F0EBC099A9F9AA /* Pods-real_quick.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4JA36LAH35;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
