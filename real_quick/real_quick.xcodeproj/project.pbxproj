@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34F509385C4AA8813443A9C8 /* Pods_real_quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624B490355E5C39E99D76B5E /* Pods_real_quick.framework */; };
+		DD17950C1E8F73830028EFE4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD17950B1E8F73830028EFE4 /* GoogleService-Info.plist */; };
+		DD17950E1E8F738C0028EFE4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = DD17950D1E8F738C0028EFE4 /* Podfile */; };
+		DD6EA62E1E8F7A4100B6CE9E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD6EA62D1E8F7A4100B6CE9E /* FBSDKLoginKit.framework */; };
 		DDFFC4031E8F5CB3003AFCA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFFC4021E8F5CB3003AFCA5 /* AppDelegate.swift */; };
 		DDFFC4051E8F5CB3003AFCA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFFC4041E8F5CB3003AFCA5 /* ViewController.swift */; };
 		DDFFC4081E8F5CB3003AFCA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDFFC4061E8F5CB3003AFCA5 /* Main.storyboard */; };
@@ -26,6 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4FE9E9BD097224CD839265F2 /* Pods-real_quick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-real_quick.debug.xcconfig"; path = "Pods/Target Support Files/Pods-real_quick/Pods-real_quick.debug.xcconfig"; sourceTree = "<group>"; };
+		624B490355E5C39E99D76B5E /* Pods_real_quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_real_quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D33D28F1F0EBC099A9F9AA /* Pods-real_quick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-real_quick.release.xcconfig"; path = "Pods/Target Support Files/Pods-real_quick/Pods-real_quick.release.xcconfig"; sourceTree = "<group>"; };
+		DD17950B1E8F73830028EFE4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DD17950D1E8F738C0028EFE4 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		DD6EA62D1E8F7A4100B6CE9E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = real_quick/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		DDFFC3FF1E8F5CB3003AFCA5 /* real_quick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = real_quick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFFC4021E8F5CB3003AFCA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDFFC4041E8F5CB3003AFCA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD6EA62E1E8F7A4100B6CE9E /* FBSDKLoginKit.framework in Frameworks */,
+				34F509385C4AA8813443A9C8 /* Pods_real_quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +68,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48E93FD2E718218CD505A88B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD6EA62D1E8F7A4100B6CE9E /* FBSDKLoginKit.framework */,
+				624B490355E5C39E99D76B5E /* Pods_real_quick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		804E17F44E999E9CD76D7FB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FE9E9BD097224CD839265F2 /* Pods-real_quick.debug.xcconfig */,
+				B2D33D28F1F0EBC099A9F9AA /* Pods-real_quick.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DDFFC3F61E8F5CB3003AFCA5 = {
 			isa = PBXGroup;
 			children = (
+				DD17950D1E8F738C0028EFE4 /* Podfile */,
 				DDFFC4011E8F5CB3003AFCA5 /* real_quick */,
 				DDFFC4161E8F5CB3003AFCA5 /* real_quickTests */,
 				DDFFC4001E8F5CB3003AFCA5 /* Products */,
+				804E17F44E999E9CD76D7FB3 /* Pods */,
+				48E93FD2E718218CD505A88B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +110,7 @@
 		DDFFC4011E8F5CB3003AFCA5 /* real_quick */ = {
 			isa = PBXGroup;
 			children = (
+				DD17950B1E8F73830028EFE4 /* GoogleService-Info.plist */,
 				DDFFC4021E8F5CB3003AFCA5 /* AppDelegate.swift */,
 				DDFFC4041E8F5CB3003AFCA5 /* ViewController.swift */,
 				DDFFC4061E8F5CB3003AFCA5 /* Main.storyboard */,
@@ -103,9 +137,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDFFC41C1E8F5CB3003AFCA5 /* Build configuration list for PBXNativeTarget "real_quick" */;
 			buildPhases = (
+				25C7FD7093EE0B2EBB8E13C3 /* [CP] Check Pods Manifest.lock */,
 				DDFFC3FB1E8F5CB3003AFCA5 /* Sources */,
 				DDFFC3FC1E8F5CB3003AFCA5 /* Frameworks */,
 				DDFFC3FD1E8F5CB3003AFCA5 /* Resources */,
+				E386462E06C0205C6EBCDC85 /* [CP] Embed Pods Frameworks */,
+				F7057FE12AF3390E39C4920E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,7 +216,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD17950E1E8F738C0028EFE4 /* Podfile in Resources */,
 				DDFFC40D1E8F5CB3003AFCA5 /* LaunchScreen.storyboard in Resources */,
+				DD17950C1E8F73830028EFE4 /* GoogleService-Info.plist in Resources */,
 				DDFFC40A1E8F5CB3003AFCA5 /* Assets.xcassets in Resources */,
 				DDFFC4081E8F5CB3003AFCA5 /* Main.storyboard in Resources */,
 			);
@@ -193,6 +232,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25C7FD7093EE0B2EBB8E13C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E386462E06C0205C6EBCDC85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-real_quick/Pods-real_quick-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7057FE12AF3390E39C4920E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-real_quick/Pods-real_quick-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DDFFC3FB1E8F5CB3003AFCA5 /* Sources */ = {
@@ -335,8 +422,13 @@
 		};
 		DDFFC41D1E8F5CB3003AFCA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FE9E9BD097224CD839265F2 /* Pods-real_quick.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/real_quick",
+				);
 				INFOPLIST_FILE = real_quick/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "languages.real-quick";
@@ -347,8 +439,13 @@
 		};
 		DDFFC41E1E8F5CB3003AFCA5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2D33D28F1F0EBC099A9F9AA /* Pods-real_quick.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/real_quick",
+				);
 				INFOPLIST_FILE = real_quick/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "languages.real-quick";
@@ -404,6 +501,7 @@
 				DDFFC41E1E8F5CB3003AFCA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDFFC41F1E8F5CB3003AFCA5 /* Build configuration list for PBXNativeTarget "real_quickTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +510,7 @@
 				DDFFC4211E8F5CB3003AFCA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
