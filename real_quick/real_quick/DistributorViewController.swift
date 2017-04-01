@@ -26,6 +26,7 @@ class DistributorViewController: UIViewController, UIPickerViewDelegate, UIPicke
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var priceText: UITextField!
     @IBOutlet weak var groceryLabel: UILabel!
+    var grocery: String = ""
     
     var pickerData: [String] = [String]()
     
@@ -89,7 +90,8 @@ class DistributorViewController: UIViewController, UIPickerViewDelegate, UIPicke
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         // This method is triggered whenever the user makes a change to the picker selection.
         // The parameter named row and component represents what was selected.
-        groceryLabel.text = pickerData[row]
+        grocery = pickerData[row]
+        groceryLabel.text = grocery
 
     }
     
@@ -97,7 +99,7 @@ class DistributorViewController: UIViewController, UIPickerViewDelegate, UIPicke
     @IBAction func saveGrocery(_ sender: AnyObject) {
         
         let userID = FIRAuth.auth()?.currentUser?.uid
-        
+        groceryLabel.text = "Deal! " + grocery + " for " + priceText.text!
         ref.child("users").child(userID!).child("grocery").setValue(groceryLabel.text)
     }
     
