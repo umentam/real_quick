@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "97AC9B32B2E4242CB415AECE726579D3609466B5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "97AC9B32B2E4242CB415AECE726579D3609466B5" : 9223372036854775807,
+    "2610506E4BEB439F5A6738C1BD1353373EC55E62" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8CF97F16-1571-4AAF-9B4C-917A4529394F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "97AC9B32B2E4242CB415AECE726579D3609466B5" : "real_quick\/",
+    "2610506E4BEB439F5A6738C1BD1353373EC55E62" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "real_quick",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "real_quick\/real_quick.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/umentam\/narrojobs.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2610506E4BEB439F5A6738C1BD1353373EC55E62"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/umentam\/real_quick.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "97AC9B32B2E4242CB415AECE726579D3609466B5"
+    }
+  ]
+}
