@@ -10,6 +10,7 @@
 		34F509385C4AA8813443A9C8 /* Pods_real_quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 624B490355E5C39E99D76B5E /* Pods_real_quick.framework */; };
 		DD17950C1E8F73830028EFE4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD17950B1E8F73830028EFE4 /* GoogleService-Info.plist */; };
 		DD17950E1E8F738C0028EFE4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = DD17950D1E8F738C0028EFE4 /* Podfile */; };
+		DD5CD4CF1E8F8A7C002833A3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5CD4CE1E8F8A7C002833A3 /* SignUpViewController.swift */; };
 		DDFFC4031E8F5CB3003AFCA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFFC4021E8F5CB3003AFCA5 /* AppDelegate.swift */; };
 		DDFFC4051E8F5CB3003AFCA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFFC4041E8F5CB3003AFCA5 /* ViewController.swift */; };
 		DDFFC4081E8F5CB3003AFCA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDFFC4061E8F5CB3003AFCA5 /* Main.storyboard */; };
@@ -33,7 +34,8 @@
 		624B490355E5C39E99D76B5E /* Pods_real_quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_real_quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D33D28F1F0EBC099A9F9AA /* Pods-real_quick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-real_quick.release.xcconfig"; path = "Pods/Target Support Files/Pods-real_quick/Pods-real_quick.release.xcconfig"; sourceTree = "<group>"; };
 		DD17950B1E8F73830028EFE4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		DD17950D1E8F738C0028EFE4 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		DD17950D1E8F738C0028EFE4 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DD5CD4CE1E8F8A7C002833A3 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		DDFFC3FF1E8F5CB3003AFCA5 /* real_quick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = real_quick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFFC4021E8F5CB3003AFCA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDFFC4041E8F5CB3003AFCA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				DDFFC4091E8F5CB3003AFCA5 /* Assets.xcassets */,
 				DDFFC40B1E8F5CB3003AFCA5 /* LaunchScreen.storyboard */,
 				DDFFC40E1E8F5CB3003AFCA5 /* Info.plist */,
+				DD5CD4CE1E8F8A7C002833A3 /* SignUpViewController.swift */,
 			);
 			path = real_quick;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD5CD4CF1E8F8A7C002833A3 /* SignUpViewController.swift in Sources */,
 				DDFFC4051E8F5CB3003AFCA5 /* ViewController.swift in Sources */,
 				DDFFC4031E8F5CB3003AFCA5 /* AppDelegate.swift in Sources */,
 			);
@@ -422,7 +426,7 @@
 			baseConfigurationReference = 4FE9E9BD097224CD839265F2 /* Pods-real_quick.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4JA36LAH35;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/real_quick",
@@ -440,7 +444,7 @@
 			baseConfigurationReference = B2D33D28F1F0EBC099A9F9AA /* Pods-real_quick.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4JA36LAH35;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/real_quick",

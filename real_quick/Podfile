@@ -3,6 +3,7 @@
 
 target 'real_quick' do
   use_frameworks!
+  source 'https://github.com/CocoaPods/Specs.git'
 
   # Pods for real_quick
     pod 'Firebase'
